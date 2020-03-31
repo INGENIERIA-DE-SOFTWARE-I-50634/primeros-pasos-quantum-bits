@@ -10,7 +10,7 @@ var root = path.resolve(__dirname) + '/public/';
 app.get('/', (req, res) => {
     res.sendFile('block.html', { 'root': root });
 });
-app.get('/set', function(req, res) {
+app.get('/sey', function(req, res) {
     console.log(JSON.stringify(req.query));
     data.push({ x: req.query.x });
     res.send({
